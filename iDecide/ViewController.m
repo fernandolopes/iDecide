@@ -14,9 +14,16 @@
 
 @implementation ViewController
 
+@synthesize decisionText;
+
+-(IBAction)buttonPressed:(id)sender{
+    self.decisionText.text = @"Go for it!";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"teste");
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
